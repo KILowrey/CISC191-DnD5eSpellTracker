@@ -2,11 +2,18 @@
 8 week Java Project for CISC 191. A Spells Tracker for DnD5e
 
 ## Project Proposal
+
 ### Planned Working Time
 I plan on working on this project after class on Mondays from 12:00pm to at least 3:00pm. I will also work on it as needed on Tuesdays, Thursdays, and Fridays.
 
 ### Project Pitch
-(insert project pitchs)
+Spells are a major part of playing Dungeons & Dragons. It you're a spallcaster like a Wizard or Sorcerer, it's pretty much your entire gameplay. If you're a partial caster, it's still a part of your game play. and while there are a few classes that can go spell free, usually the party will be at least half people who can cast some kind of spells.
+
+But keeping track of spells can be a hassle. If you're a wizard you learn 2 new spells each time you gain a level, which can really add up. If you're a cleric you can prepare any spell on the cleric spell list. Anyone who casts spells needs to keep track of how many they're casted and how many spell slots they have left.
+
+I'm making a D&D fifth edition Spell Tracker to help make spells less of a hassle when playing D&D.
+
+Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual, if they're prepared or not (or *always* prepared due to subclass), or just the level of the spells. 
 
 ### CRC Cards
 (inset CRC Cards)
