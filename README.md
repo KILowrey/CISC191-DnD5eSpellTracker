@@ -3,9 +3,6 @@
 
 ## Project Proposal
 
-### Planned Working Time
-I plan on working on this project after class on Mondays from 12:00pm to at least 3:00pm. I will also work on it as needed on Tuesdays, Thursdays, and Fridays.
-
 ### Project Pitch
 Spells are a major part of playing Dungeons & Dragons. It you're a spallcaster like a Wizard or Sorcerer, it's pretty much your entire gameplay. If you're a partial caster, it's still a part of your game play. and while there are a few classes that can go spell free, usually the party will be at least half people who can cast some kind of spells.
 
@@ -25,14 +22,30 @@ Players will be able to keep track of how many spells slots they have and have l
 (link to video of object oriented design.)
 
 ### Learning Outcomes
-- LO1: Employ design priniclepls of object-oriented programming
-- LO2: Construct programs utilizing single and multidimensional arrays (optional)
-- LO3: Construct programs utlizing object and classes in object-oriented programming, including aggregation
-- LO4: Construct programs utlizing inheritance and polymorphism, including abstract classes and interfaces
-- LO5: construct pograms utilizing genertic collections and data structures.
-- LO6: Construct programs utilizing graphical user interdces and utilizing event-driven programming
-- LO7: Construct programs utilizing exception handling
-- LO8: Construct programs utilizing text file I/O
+
+#### Employ design Primciples of Object-Oriented Programming (LO1)
+The spells...
+
+#### Util Single and Multidimesional Arrays (LO2, optional)
+not sure if will cover yet.
+
+#### Util Object and Classes in Objectin Object-Oriented Programming, Including Aggregation (LO3)
+I will utilize....
+
+#### Util Inheritance and Polymorphism, Including Abstract Classes and Interfaces (LO4)
+By...
+
+#### Util Generic Collections and Data Structures (LO5)
+by...
+
+#### Util Graphical User Interfaces and Util Event-Driven Programming (LO6)
+by....
+
+#### Util Exception Handling (LO7)
+I will
+
+#### Util Text Tile I/O (LO8)
+this will...
 
 ### Timeline
 __Everyweek__
