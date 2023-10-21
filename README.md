@@ -12,15 +12,6 @@ I'm making a D&D fifth edition Spell Tracker to help make spells less of a hassl
 
 Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual, if they're prepared or not (or *always* prepared due to subclass), or just the level of the spells. 
 
-### CRC Cards
-(insert CRC Cards)
-
-### UML Diagram
-(insert UML Diagram)
-
-### Object-Oriented Design
-(link to video of object oriented design.)
-
 ### Learning Outcomes
 
 #### Employ design Principles of Object-Oriented Programming (LO1)
@@ -55,20 +46,24 @@ __Everyweek__
 
 __Week 1__
  - Write the project proposal
- - Plan the object-oriented design, starting with CRC cards. Determine classes (with fields and methods) and interfaces and their responsiblites. (the "model" part of MVC.)
+ - Plan the object-oriented design, starting with CRC cards. Determine classes (with fields and methods) and interfaces and their responsibilities. (the "model" part of MVC.)
  - Create the UML.
  - Begin writing project page.
 
 __Week 2__
- - Write code for classes X, Y, Z.
+ - Write code for all the Character, Spells, and Points classes and Interfaces
+ - Start copying over all the SRD spell files
  - Develop text cases and test code as it is written.
 
 __Week 3__
- - Finish writing classes.
+ - "Finalize" the code for Character, Spells, and Points classes and interfaces
+ - Continue to copy over the SRD spell files
  - Determine where exception handling is needed to ensure the program fails gracefully
  - Design th eGUI (sketch it out on paper) - include the design in the weekly update!
 
 __Week 4__
+ - Finish copying over the SRD spell files if haven't already
+ - Perfect code for the Character, Spells, and Points classes and interfaces.
  - Test, test, test, debug, and test some more.
 
 __Week 5__
