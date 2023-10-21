@@ -13,7 +13,7 @@ I'm making a D&D fifth edition Spell Tracker to help make spells less of a hassl
 Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual, if they're prepared or not (or *always* prepared due to subclass), or just the level of the spells. 
 
 ### CRC Cards
-(inset CRC Cards)
+(insert CRC Cards)
 
 ### UML Diagram
 (insert UML Diagram)
@@ -23,29 +23,30 @@ Players will be able to keep track of how many spells slots they have and have l
 
 ### Learning Outcomes
 
-#### Employ design Primciples of Object-Oriented Programming (LO1)
-The spells...
+#### Employ design Principles of Object-Oriented Programming (LO1)
+This is an Object-Oriented project. The core of the project is that users will create a "Character" object that stores relevant data including which "Spells" the character has access to. Spells are another object with stores lots of data. The data stored in objects like character and spell and how we use/display it is the core of this project.
 
-#### Util Single and Multidimesional Arrays (LO2, optional)
-not sure if will cover yet.
+#### Util Single and Multidimensional Arrays (LO2, optional)
+(I don't think I'm gonna do this)
 
-#### Util Object and Classes in Objectin Object-Oriented Programming, Including Aggregation (LO3)
-I will utilize....
+#### Util Object and Classes in Object-Oriented Programming, Including Aggregation (LO3)
+"Character" HAS-[MANY] Spells they have access to.
+"Character" HAS-A spell slots/points tracker.
 
 #### Util Inheritance and Polymorphism, Including Abstract Classes and Interfaces (LO4)
-By...
+Spell Points and Sorcery points will both inherite from a "Points" abstract class which has an interface for adding, subtracting, and displaying the number of points.
 
 #### Util Generic Collections and Data Structures (LO5)
-by...
+In order to store and access spell elements this project will have to use generic collections and data structures.
 
-#### Util Graphical User Interfaces and Util Event-Driven Programming (LO6)
-by....
+#### Util Graphical User Interfaces and utilizing Event-Driven Programming (LO6)
+This program will be a window with with the user selecting buttons and other GUI interfaces to change what they see.
 
 #### Util Exception Handling (LO7)
-I will
+This project will through up errors when users do somthing they're not supposed to in the program that would mess it up.
 
-#### Util Text Tile I/O (LO8)
-this will...
+#### Util Text File I/O (LO8)
+This project will utilize text file input/output by reading and writing to files to store spells and save data between sessions.
 
 ### Timeline
 __Everyweek__
