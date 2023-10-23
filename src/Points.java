@@ -3,7 +3,7 @@
  * @author KILowrey
  *
  */
-public abstract class Points
+public abstract class Points implements PointsInterface
 {
-
+	
 }

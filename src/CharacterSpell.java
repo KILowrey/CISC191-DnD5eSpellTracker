@@ -1,5 +1,9 @@
-
-public class CharacterSpell
+/**
+ * 
+ * @author KILowrey
+ *
+ */
+public class CharacterSpell extends Spell
 {
 
 }

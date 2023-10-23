@@ -3,7 +3,7 @@
  * @author KILowrey
  *
  */
-public interface PointsCounter
+public interface PointsInterface
 {
 
 }

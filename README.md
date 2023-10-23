@@ -80,6 +80,9 @@ __Week 8__
  - Create project demonstration video, including information about hwo each LO is used as part of the project.
  - Submit final code on Canvas, and add videos to project page.
 
+### CRC Cards
+!(test)[./assets/CRC_cards.pdf]
+
 ## Deliverables per Week
 
 ## Project Wrap-up
