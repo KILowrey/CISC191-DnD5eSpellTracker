@@ -4,40 +4,40 @@
 ## Project Proposal
 
 ### Project Pitch
-Spells are a major part of playing Dungeons & Dragons. It you're a spallcaster like a Wizard or Sorcerer, it's pretty much your entire gameplay. If you're a partial caster, it's still a part of your game play. and while there are a few classes that can go spell free, usually the party will be at least half people who can cast some kind of spells.
+Spells are a major part of playing Dungeons & Dragons. It you're a Spellcaster like a Wizard or Sorcerer, it's pretty much your entire gameplay. If you're a partial caster, it's still a part of your game play. and while there are a few classes that can go spell free, usually the party will be at least half people who can cast some kind of spells.
 
-But keeping track of spells can be a hassle. If you're a wizard you learn 2 new spells each time you gain a level, which can really add up. If you're a cleric you can prepare any spell on the cleric spell list. Anyone who casts spells needs to keep track of how many they're casted and how many spell slots they have left.
+But keeping track of spells can be a hassle. If you're a Wizard you learn 2 new spells each time you gain a level, which can really add up. If you're a Cleric you can prepare any spell on the Cleric spell list. Anyone who casts spells needs to keep track of how many they've casted and how many spell slots they have left.
 
-I'm making a D&D fifth edition Spell Tracker to help make spells less of a hassle when playing D&D.
+__I'm making a D&D fifth edition Spell Tracker to help make spells less of a hassle when playing D&D.__
 
-Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual, if they're prepared or not (or *always* prepared due to subclass), or just the level of the spells. 
+Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual (meaning you can cast them without using your limited number of spells you can cast a day as long as you take 10 minutes on it), if they're prepared (meaning you don't just know it but can actually cast it right now) or not (or *always* prepared due to subclass or other features), or just the level of the spells. 
 
 ### Learning Outcomes
 
-#### Employ design Principles of Object-Oriented Programming (LO1)
-This is an Object-Oriented project. The core of the project is that users will create a "Character" object that stores relevant data including which "Spells" the character has access to. Spells are another object with stores lots of data. The data stored in objects like character and spell and how we use/display it is the core of this project.
+__Employ design Principles of Object-Oriented Programming (LO1):__
+This is an Object-Oriented project not just because it's made using an object oriented language. The core of the project is that users will create a "Character" object that stores relevant data including which "Spells" the character has access to. Spells are another object with stores lots of data. The data stored in objects like character and spell and how we use/display/track it is the basis of this project. 
 
-#### Util Single and Multidimensional Arrays (LO2, optional)
-(I don't think I'm gonna do this)
+__Util Single and Multidimensional Arrays (LO2, optional):__
+(I don't think arrays will be used in this project but I'm keeping this up here in case I find that they *are* the best way to do something later.)
 
-#### Util Object and Classes in Object-Oriented Programming, Including Aggregation (LO3)
-"Character" HAS-[MANY] Spells they have access to.
-"Character" HAS-A spell slots/points tracker.
+__Object and Classes in Object-Oriented Programming, Including Aggregation (LO3):__
+Character HAS-A Spells List of the Spells they know.
+Spell List is made of Spells.
 
-#### Util Inheritance and Polymorphism, Including Abstract Classes and Interfaces (LO4)
-Spell Points and Sorcery points will both inherite from a "Points" abstract class which has an interface for adding, subtracting, and displaying the number of points.
+__Util Inheritance and Polymorphism, Including Abstract Classes and Interfaces (LO4):__
+Spell Points and Sorcery points will both inherent from a "Points" abstract class which has an interface for adding, subtracting, displaying, etc. the number of points.
 
-#### Util Generic Collections and Data Structures (LO5)
-In order to store and access spell elements this project will have to use generic collections and data structures.
+__Util Generic Collections and Data Structures (LO5):__
+In order to store and access spell elements this project will have to use generic collections and data structures for the Spells and also the Characters and their settings that the user has saved.
 
-#### Util Graphical User Interfaces and utilizing Event-Driven Programming (LO6)
-This program will be a window with with the user selecting buttons and other GUI interfaces to change what they see.
+__Util Graphical User Interfaces and utilizing Event-Driven Programming (LO6):__
+This program will be a window with with the user selecting buttons and other GUI interfaces to change what they see. For example, There will be checkboxes for spell slots that users can set to keep track of if they used that spell slot.
 
-#### Util Exception Handling (LO7)
-This project will through up errors when users do somthing they're not supposed to in the program that would mess it up.
+__Util Exception Handling (LO7):__
+This project will through up errors when users do something they're not supposed to in the program that would mess it up. Such as subtract the number of spell points they have into a negative number (you can't have negative spell points in DnD)
 
-#### Util Text File I/O (LO8)
-This project will utilize text file input/output by reading and writing to files to store spells and save data between sessions.
+__Util Text File I/O (LO8)__
+This project will utilize text file input/output by reading and writing to files to store spells and save data, such as characters, between sessions.
 
 ### Timeline
 __Everyweek__
