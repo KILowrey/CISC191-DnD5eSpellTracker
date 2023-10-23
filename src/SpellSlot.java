@@ -3,7 +3,7 @@
  * @author KILowrey
  *
  */
-public class Spells
+public class SpellSlot
 {
 
 }

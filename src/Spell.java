@@ -3,7 +3,7 @@
  * @author KILowrey
  *
  */
-public class SpellList
+public class Spell
 {
 
 }
