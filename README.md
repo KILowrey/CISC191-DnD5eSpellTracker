@@ -81,7 +81,7 @@ __Week 8__
  - Submit final code on Canvas, and add videos to project page.
 
 ### CRC Cards
-!(test)[./assets/CRC_cards.pdf]
+./assets/CRC_cards.pdf
 
 ## Deliverables per Week
 
