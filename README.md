@@ -1,9 +1,10 @@
 # CISC191-DnD5eSpellTracker
-8 week Java Project for CISC 191. A Spells Tracker for DnD5e
+Java Project for CISC 191. A Spells Tracker for DnD5e
 
-## Project Proposal
+![screenshot of final product]()
 
-### Project Pitch
+## Overview
+
 Spells are a major part of playing Dungeons & Dragons. It you're a Spellcaster like a Wizard or Sorcerer, it's pretty much your entire gameplay. If you're a partial caster, it's still a part of your game play. and while there are a few classes that can go spell free, usually the party will be at least half people who can cast some kind of spells.
 
 But keeping track of spells can be a hassle. If you're a Wizard you learn 2 new spells each time you gain a level, which can really add up. If you're a Cleric you can prepare any spell on the Cleric spell list. Anyone who casts spells needs to keep track of how many they've casted and how many spell slots they have left.
@@ -11,6 +12,27 @@ But keeping track of spells can be a hassle. If you're a Wizard you learn 2 new 
 __I'm making a D&D fifth edition Spell Tracker to help make spells less of a hassle when playing D&D.__
 
 Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual (meaning you can cast them without using your limited number of spells you can cast a day as long as you take 10 minutes on it), if they're prepared (meaning you don't just know it but can actually cast it right now) or not (or *always* prepared due to subclass or other features), or just the level of the spells. 
+
+![insert Walkthough Video from class when that's done]()
+
+## Credits & Legal
+
+[disclaimer that I did not invent DnD and don't own 5e]
+
+[disclaimer that I only used the SRD which is allowed]
+
+License for project: [GNU General Public License V3](LICENSE)
+
+__Special Thanks to__
+ - [instructor and tutor]
+ - [friends I brainstormed with]
+ - [other]
+
+## Class (as in the college course) Specific Info
+
+![Diagram of the project plan](./assets/ProgramDiagram.PNG)
+
+![insert intro video for object oriented programming]()
 
 ### Learning Outcomes
 
@@ -41,7 +63,7 @@ This project will utilize text file input/output by reading and writing to files
 
 ### Timeline
 __Everyweek__
- - Updtae project page with the progress details.
+ - Update project page with the progress details.
  - Submit code written so far.
 
 __Week 1__
@@ -59,7 +81,7 @@ __Week 3__
  - "Finalize" the code for Character, Spells, and Points classes and interfaces
  - Continue to copy over the SRD spell files
  - Determine where exception handling is needed to ensure the program fails gracefully
- - Design th eGUI (sketch it out on paper) - include the design in the weekly update!
+ - Design the GUI (sketch it out on paper) - include the design in the weekly update!
 
 __Week 4__
  - Finish copying over the SRD spell files if haven't already
@@ -79,11 +101,3 @@ __Week 8__
  - Debug any remaining problems.
  - Create project demonstration video, including information about hwo each LO is used as part of the project.
  - Submit final code on Canvas, and add videos to project page.
-
-### CRC Cards
-./assets/CRC_cards.pdf
-
-## Deliverables per Week
-
-## Project Wrap-up
-
