@@ -1,7 +1,7 @@
 # CISC191-DnD5eSpellTracker
 Java Project for CISC 191. A Spells Tracker for DnD5e
 
-![screenshot of final product]()
+[screenshot of final product]
 
 ## Overview
 
@@ -13,7 +13,7 @@ __I'm making a D&D fifth edition Spell Tracker to help make spells less of a has
 
 Players will be able to keep track of how many spells slots they have and have left (or if they use spell points keep track of those). Players will have an easy to navigate list of their spells that can be sorted by if they're a ritual (meaning you can cast them without using your limited number of spells you can cast a day as long as you take 10 minutes on it), if they're prepared (meaning you don't just know it but can actually cast it right now) or not (or *always* prepared due to subclass or other features), or just the level of the spells. 
 
-![insert Walkthough Video from class when that's done]()
+[insert Walkthough Video from class when that's done]
 
 ## Credits & Legal
 
@@ -32,21 +32,18 @@ __Special Thanks to__
 
 ![Diagram of the project plan](./assets/ProgramDiagram.PNG)
 
-![insert intro video for object oriented programming]()
+[insert intro video for object oriented programming]
 
 ### Learning Outcomes
 
 __Employ design Principles of Object-Oriented Programming (LO1):__
 This is an Object-Oriented project not just because it's made using an object oriented language. The core of the project is that users will create a "Character" object that stores relevant data including which "Spells" the character has access to. Spells are another object with stores lots of data. The data stored in objects like character and spell and how we use/display/track it is the basis of this project. 
 
-__Util Single and Multidimensional Arrays (LO2, optional):__
-(I don't think arrays will be used in this project but I'm keeping this up here in case I find that they *are* the best way to do something later.)
-
 __Object and Classes in Object-Oriented Programming, Including Aggregation (LO3):__
-Character HAS-A Spells List of the Spells they know.
-Spell List is made of Spells.
+Character HAS-A bunch of CharacterSpells they know and a CharacterSpell IS-A Spell.
 
 __Util Inheritance and Polymorphism, Including Abstract Classes and Interfaces (LO4):__
+CharacterSpell extends Spell. 
 Spell Points and Sorcery points will both inherent from a "Points" abstract class which has an interface for adding, subtracting, displaying, etc. the number of points.
 
 __Util Generic Collections and Data Structures (LO5):__
