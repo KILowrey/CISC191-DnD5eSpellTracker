@@ -28,9 +28,9 @@ public class Character
 	// characters spell save dc
 	private int spellSaveDC;
 	// if character has spell points
-	private boolean spellPoints;
+	private boolean hasSpellPoints;
 	// if character has sorcery points
-	private boolean sorceryPoints;
+	private boolean hasSorceryPoints;
 
 	// if spellPoints == true they will have a spellPoints object
 	//

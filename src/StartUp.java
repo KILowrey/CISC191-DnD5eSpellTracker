@@ -3,6 +3,9 @@
  * @author KILowrey
  *
  */
+
+// import MainGUI.java
+
 public class StartUp
 {
 
@@ -16,7 +19,7 @@ public class StartUp
 		 */
 		
 		/**
-		 * GUI stuff
+		 * load up GUI stuff
 		 */
 
 	}

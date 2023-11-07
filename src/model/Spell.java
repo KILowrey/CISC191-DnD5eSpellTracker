@@ -1,5 +1,5 @@
 package model;
-
+import enums.*;
 
 /**
  * 
@@ -14,7 +14,7 @@ public class Spell
 	// spell level 0-9
 	private int spellLevel;
 	// what school of magic it is
-	private String school; // SWITCH to ENUM later that is the 8 SCHOOLS
+	private enum school; // SWITCH to ENUM later that is the 8 SCHOOLS
 	// how long it takes to cast
 	private String castTime;
 	// spell's range
@@ -34,16 +34,16 @@ public class Spell
 	// does it require concentration?
 	private boolean isConcentration;
 	// is it an attack roll?
-	private boolean isAttack;
+	private enum attckType;
 	// what kind of saving throw (null if isAttack = true)
-	private String saveType; // SWITCH to ENUM later that is the six stats with
+	private enum saveType; // SWITCH to ENUM later that is the six stats with
 								// NULL for not a save
 	// the description of the spell in the book
 	private String spellDescription;
 	// the descriiption of what te spell does at higher levels
 	private String higherLevels;
 	// if it's SRD or otherwise
-	private String source; // SWITCH TO ENUM THAT IS SRD, WOTC, OR HB
+	private enum source; // SWITCH TO ENUM THAT IS SRD, WOTC, OR HB
 	// for tracking them:
 	private final int index;
 	private static int counter;
