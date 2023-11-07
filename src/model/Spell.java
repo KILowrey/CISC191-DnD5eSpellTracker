@@ -1,3 +1,6 @@
+package model;
+
+
 /**
  * 
  * @author KILowrey
@@ -31,9 +34,10 @@ public class Spell
 	// does it require concentration?
 	private boolean isConcentration;
 	// is it an attack roll?
-	private boolean isAttack; 
+	private boolean isAttack;
 	// what kind of saving throw (null if isAttack = true)
-	private String saveType; // SWITCH to ENUM later that is the six stats with NULL for not a save
+	private String saveType; // SWITCH to ENUM later that is the six stats with
+								// NULL for not a save
 	// the description of the spell in the book
 	private String spellDescription;
 	// the descriiption of what te spell does at higher levels
@@ -43,19 +47,19 @@ public class Spell
 	// for tracking them:
 	private final int index;
 	private static int counter;
-	
+
 	//////// CONSTRUCTORS ////////
-	
+
 	// add a spell from the database
-	public Spell (String source, int index)
+	public Spell(String source, int index)
 	{
-		
+
 	}
-	
+
 	// user adds a spell wholecloth
-	public Spell (String source, String spellName)
+	public Spell(String source, String spellName)
 	{
-		
+
 	}
-	
+
 }
