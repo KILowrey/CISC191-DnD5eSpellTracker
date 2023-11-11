@@ -6,7 +6,7 @@
 
 // import MainGUI.java
 
-public class StartUp
+public class Main
 {
 
 	/** 
@@ -22,6 +22,14 @@ public class StartUp
 		 * load up GUI stuff
 		 */
 
+	}
+	
+	/**
+	 * save function for updating the files to match the objects
+	 */
+	public void save() 
+	{
+		
 	}
 
 }
