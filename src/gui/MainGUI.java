@@ -27,18 +27,12 @@ public class MainGUI extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		// make a JPANEL and add it to the frame
-		createMainPanel();
+		//createMainPanel();
+		mainPanel = new JPanel();
 		add(mainPanel);
 		
 		// display the window
 		setVisible(true);
-	}
-	
-	private void createMainPanel()
-	{
-		mainPanel = new JPanel();
-		
-		// create all our stuff we need
 	}
 
 }

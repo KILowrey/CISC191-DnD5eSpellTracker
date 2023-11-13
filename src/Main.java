@@ -4,7 +4,9 @@
  *
  */
 
-// import MainGUI.java
+import model.*;
+import gui.*;
+import testing.*;
 
 public class Main
 {
@@ -21,9 +23,10 @@ public class Main
 		/**
 		 * load up GUI stuff
 		 */
+		MainGUI GUIPanel = new MainGUI();
 
 	}
-	
+
 	/**
 	 * save function for updating the files to match the objects
 	 */
