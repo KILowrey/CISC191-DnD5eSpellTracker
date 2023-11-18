@@ -19,12 +19,36 @@ public class Main
 		/**
 		 * load up from our files database
 		 */
+		loadSpellsFromDatabase();
+		loadCharactersFromDatabase();
 		
 		/**
 		 * load up GUI stuff
 		 */
 		MainGUI GUIPanel = new MainGUI();
 
+	}
+	
+	public void loadSpellsFromDatabase() 
+	{
+		// read from database/spells/index.txt
+		
+		// read each line 
+		
+		// for each line find the file with the same name and upload it as a spell object
+		
+		
+	}
+	
+	public void loadCharactersFromDatabase()
+	{
+		// read from database/characters/index.txt what the number of characters we have is
+		
+		// for each we create a character object from the chara[2 digit index] file in the folder of the same name
+		
+		// them we upload the the spell slots datastruc from the slots[2 digit index] file
+		
+		// them we upload the character's spells from the spells[2 digit index] file
 	}
 
 	/**

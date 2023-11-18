@@ -6,51 +6,29 @@ import enums.*;
  * @author KILowrey
  *
  */
-public class Spell
+public class Spell extends dndObj
 {
 	//////// FIELDS ////////
-	// name of spell
-	private String spellName;
-	// spell level 0-9
-	private int spellLevel;
-	// what school of magic it is
-	private Enum school;
-	// how long it takes to cast
-	private String castTime;
-	// spell's range
-	private String range;
-	// spell has a verbal component
-	private boolean isV;
-	// spell has a "somatic" (hand gesture) component
-	private boolean isS;
-	// spell has a material component
-	private boolean isM;
-	// if spell has a material component, what are the materials?
-	private String materials;
-	// how long does it last?
-	private String duration;
-	// can it be case a a ritual?
-	private boolean isRitual;
-	// does it require concentration?
-	private boolean isConcentration;
-	// is it an attack roll?
-	private Enum attckType;
-	// what kind of saving throw (null if isAttack = true)
-	private Enum saveType; // SWITCH to ENUM later that is the six stats with
-								// NULL for not a save
-	// the description of the spell in the book
-	private String spellDescription;
-	// the descriiption of what te spell does at higher levels
-	private String higherLevels;
-	// if it's SRD or otherwise
-	private Enum source; // SWITCH TO ENUM THAT IS SRD, WOTC, OR HB
 	
-	/**
-	 * TODO: create an @override hasher
-	 * that generated a hashed index for each spell where
-	 * 
-	 */
-	private final int hashIndex;
+	// index for finding the spell
+	// spell level (0-9)
+	// name of spell
+	// notes for spell
+	private Enum school; // what school of magic it is
+	private String castTime; // how long it takes to cast
+	private String range; // the spell's range
+	private boolean isV; // if the spell has a verbal component
+	private boolean isS; // if the spell has a "somatic" (hand gesture) component
+	private boolean isM; // if the spell has a material component
+	private String materials; // if it does need materials, what are they?
+	private String duration; // how long does it last?
+	private boolean isRitual; // can it be ritual cast?
+	private boolean isConcentration; // does it require concentration?
+	private Enum attckType; // null if not an attack roll, otherwise ranged or melee
+	private Enum saveType; // null if not a save, otherwise what kind of save?
+	private String spellText; // the text description of the spell
+	private String higherLevels; // the description of what the spell does at higher levels
+	private Enum source; // if it's a SRD spell, a not SRD but still WOTC, or a HomeBrew spell
 
 	//////// CONSTRUCTORS ////////
 

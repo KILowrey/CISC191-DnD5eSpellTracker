@@ -14,38 +14,17 @@ import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Character 
+public class Character extends dndObj
 {
 	//////// FIELDS ////////
-	// name of character
-	private String characterName;
-	// text for character's class and subclass
-	private String characterClass;
-	// character's level
-	private int characterLevel;
-	// character's attack bonus
-	private int attackBonus;
-	// characters spell save dc
-	private int spellSaveDC;
-	// if character has spell points
-	private boolean hasSpellPoints = false;
-	// if character has sorcery points
-	private boolean hasSorceryPoints = false;
+	// index for finding character
+	// character's level (1-20)
+	// character's name
+	// notes on character
+	private String classes; // the character's classes (wizard, sorcerer, etc.)
+	private int attackBonus; // the character's attackBonus
+	private int spellSaveDC; // the character's spellSaveDC
 	
-	private final int charIndex;
-	private static int charCounter;
-
-	// if spellPoints == true they will have a spellPoints object
-	//
-
-	// if sorceryPoints == true they will have a sorceryPoints obj
-	//
-
-	// spell slots objects
-	// private [datastruc] SpellSlot
-
-	// they will also have a collection of character spell objects
-	// private [datastruc] CharacterSpell
 
 	//////// CONSTRUCTORES ////////
 
@@ -56,25 +35,14 @@ public class Character
 	public Character(File input) throws FileNotFoundException 
 	{
 		Scanner characterFile = new Scanner(input);
-		charIndex = characterFile.nextInt();
-		characterName = characterFile.nextLine();
-		characterClass = characterFile.nextLine();
+		index = characterFile.nextInt();
+		name = characterFile.nextLine();
+		classes = characterFile.nextLine();
 		characterFile.nextLine();
-		characterLevel = characterFile.nextInt();
+		level = characterFile.nextInt();
 		attackBonus = characterFile.nextInt();
 		spellSaveDC = characterFile.nextInt();
 		
-		String yorn;
-		yorn = characterFile.nextLine();
-		if (yorn == "y")
-		{
-			hasSpellPoints = true;
-		}
-		yorn = characterFile.nextLine();
-		if (yorn == "y")
-		{
-			hasSorceryPoints = true;
-		}
 	}
 
 	/**
@@ -84,54 +52,29 @@ public class Character
 	{
 		Scanner keyboard = input;
 		// receive characterName
-		characterName = keyboard.nextLine();
+		setName(keyboard.nextLine());
+		//
+		setLevel(keyboard.nextInt());
 		// receive characterClass 
-		characterClass = keyboard.nextLine();
-		// receive characterLevel
-		characterLevel = keyboard.nextInt();
+		classes = keyboard.nextLine();
 		// receive attackBonus 
 		attackBonus = keyboard.nextInt();
 		// receive spellSaveDC
 		spellSaveDC = keyboard.nextInt();
-		
-		// create a variable for our input so we can do it statements for them
-		String yorn;
-		// set hasSpellPoints
-		yorn = keyboard.next();
-		if (yorn == "y") {
-			hasSpellPoints = true;
-		}
-		// receive hasSorceryPoints
-		yorn = keyboard.next();
-		if (yorn == "y") {
-			hasSorceryPoints = true;
-		}
-	}
 
-	//////// ALL THE BASIC GETTERS AND SETTERS BELOW ////////
-	/**
-	 * set name
-	 * @param
-	 */
-	public void setCharacterName(String newName) 
-	{
-		characterName = newName;
 	}
+	
+	//////// INDEX JUNK ////////
+	
+
+	//////// THE BASIC GETTERS AND SETTERS ////////
 
 	/**
 	 * set classes
 	 * @param
 	 */
-	public void setCharacterClass(String newClass) {
-		characterClass = newClass;
-	}
-
-	/**
-	 * set level
-	 * @param
-	 */
-	public void setCharacterLevel(int newLevel) {
-		characterLevel = newLevel;
+	public void setClasses(String newClass) {
+		classes = newClass;
 	}
 
 	/**
@@ -149,50 +92,17 @@ public class Character
 	public void setSpellSaveDC(int newSaveDC) {
 		spellSaveDC = newSaveDC;
 	}
-
-	/**
-	 * set spell points
-	 * @param 
-	 */
-	public void setHasSpellPoints(String yorn) {
-		if (yorn == "y") {
-			hasSpellPoints = true;
-		}
-	}
-
-	/**
-	 * set sorcery points
-	 * @param 
-	 */
-	public void setHasSorceryPoints(String yorn) {
-		if (yorn == "y") {
-			hasSorceryPoints = true;
-		}
-	}
 	
-	/**
-	 * getCharacterName
-	 * @return characterName
-	 */
-	public String getCharacterName() {
-		return characterName;
-	}
+
 	
 	/**
 	 * getCharacterClass
 	 * @return characterClass
 	 */
-	public String getCharacterClass() {
-		return characterClass;
+	public String getClasses() {
+		return classes;
 	}
 	
-	/**
-	 * getCharacterLevel
-	 * @return characterLevel
-	 */
-	public int getCharacterLevel() {
-		return characterLevel;
-	}
 	
 	/**
 	 * getAttackBonus
@@ -209,21 +119,6 @@ public class Character
 	public int getSpellSaveDC() {
 		return spellSaveDC;
 	}
-	
-	/**
-	 * getHasSpellPoints
-	 * @return hasSpellPoints
-	 */
-	public boolean getHasSpellPoints() {
-		return hasSpellPoints;
-	}
-	
-	/**
-	 * getHasSorceryPoints
-	 * @return hasSorceryPoints
-	 */
-	public boolean getHasSorceryPoints() {
-		return hasSorceryPoints;
-	}
+
 
 }
