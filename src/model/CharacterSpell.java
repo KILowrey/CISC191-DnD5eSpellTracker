@@ -18,7 +18,7 @@ public class CharacterSpell extends Spell
 	private boolean isFavorite;
 	// character notes such as "can only cast once a day but it doesn't cost a
 	// spell slot"
-	private String characterNotes;
+	// private String characterNotes;
 
 	//////// SETTERS AND GETTERS ////////
 

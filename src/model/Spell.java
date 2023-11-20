@@ -32,16 +32,30 @@ public class Spell extends dndObj
 
 	//////// CONSTRUCTORS ////////
 
-	// add a spell from the database
+	/**
+	 *  add a spell from the database
+	 * @param input
+	 */
 	public Spell(File input)
 	{
 
 	}
 
-	// user adds a spell wholecloth
+	/**
+	 *  user adds a spell wholecloth
+	 * @param input
+	 */
 	public Spell(Scanner input)
 	{
 
 	}
+	
+	/**
+	 * SPELL HAS INDEX PLAN
+	 * first digit 0, 1, 2, for SRD, WOTC, HB
+	 * second digit 0-9 for spell level
+	 * third digit is 1-8 for school
+	 * last 3 digits counting up from 1 (ideally based on how many of the above 3 there are) with leading 0s as needed
+	 */
 
 }
