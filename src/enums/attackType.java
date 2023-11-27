@@ -5,7 +5,7 @@ package enums;
  * * RANGED for a ranged spell attack
  * * MELEE for a melee spell attack
  */
-public enum attckType
+public enum attackType
 {
 	NONE,
 	RANGED,

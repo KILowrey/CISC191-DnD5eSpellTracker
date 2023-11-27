@@ -1,24 +1,20 @@
 package model;
-
+/**
+ * 
+ * @author KILowrey
+ */
 public interface dndInterface
 {
-
-
-	
-//	//////// INDEX MANAGEMENT ////////
-//	public int getNextIndex() {
-//		return nextIndex++;
-//	}
 	
 	/**
-	 * 
+	 * read from file
 	 */
 	public void readFromFile();
 	
 	/**
-	 * reads what next nextIndex should be from database
+	 * reads what next nextIndex should be from input
 	 */
-	// public void readNextIndex();
+	public void readNextIndex();
 	
 	/**
 	 * incements nextIndex
@@ -26,7 +22,7 @@ public interface dndInterface
 	public int getNextIndex();
 
 	/**
-	 * checks if 'y' or not
+	 * checks if the letter 'y' or not
 	 */
 	public boolean yornCheck();
 	
