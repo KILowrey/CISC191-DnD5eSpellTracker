@@ -6,14 +6,14 @@ import enums.*;
  * @author KILowrey
  *
  */
-public class Spell extends dndObj
+public class Spell implements dndInterface
 {
 	//////// FIELDS ////////
-	
-	// index for finding the spell
-	// spell level (0-9)
-	// name of spell
-	// notes for spell
+	private String name; // name of the spell
+	private int index; // spell index
+	private static int nextIndex = 0; // next index
+	private int level; // spell level (0-9)
+	private String notes; // notes for the spell
 	private Enum school; // what school of magic it is
 	private String castTime; // how long it takes to cast
 	private String range; // the spell's range
@@ -24,31 +24,51 @@ public class Spell extends dndObj
 	private String duration; // how long does it last?
 	private boolean isRitual; // can it be ritual cast?
 	private boolean isConcentration; // does it require concentration?
-	private Enum attckType; // null if not an attack roll, otherwise ranged or melee
+	private Enum attackType; // null if not an attack roll, otherwise ranged or melee
 	private Enum saveType; // null if not a save, otherwise what kind of save?
 	private String spellText; // the text description of the spell
 	private String higherLevels; // the description of what the spell does at higher levels
 	private Enum source; // if it's a SRD spell, a not SRD but still WOTC, or a HomeBrew spell
 
 	//////// CONSTRUCTORS ////////
-
-	/**
-	 *  add a spell from the database
-	 * @param input
-	 */
-	public Spell(File input)
+	
+	public Spell(String inputName, int inputLevel, String inputNotes,
+				Enum inputSchool, String inputCastTime, String inputRange,
+				boolean inputIsV, boolean inputIsS, boolean inputIsM, String inputMaterials,
+				String inputDuration, boolean inputIsRitual, boolean inputIsConcentration,
+				Enum inputAttackType, Enum inputSaveType, String inputSpellText, String inputHigherLevels, Enum inputSource)
 	{
-
+		this.name = inputName;
+		this.level = inputLevel;
+		this.notes = inputNotes;
+		this.school = inputSchool;
+		this.castTime = inputCastTime;
+		this.range = inputRange;
+		this.isV = inputIsV;
+		this.isS = inputIsS;
+		this.isM = inputIsM;
+		this.materials = inputMaterials;
+		this.duration = inputDuration;
+		this.isRitual = inputIsRitual;
+		this.isConcentration = inputIsConcentration;
+		this.attackType = inputAttackType;
+		this.saveType = inputSaveType;
+		this.spellText = inputSpellText;
+		this.higherLevels = inputHigherLevels;
+		this.source = inputSource;
+		//this.index = getNextIndex();
 	}
-
+	
+	
+	
+	
 	/**
-	 *  user adds a spell wholecloth
-	 * @param input
+	 * increments the next index counter
 	 */
-	public Spell(Scanner input)
-	{
-
+	public int getNextIndex() {
+		return nextIndex++;
 	}
+	
 	
 	/**
 	 * SPELL HAS INDEX PLAN

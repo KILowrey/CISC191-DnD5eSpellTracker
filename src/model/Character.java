@@ -7,71 +7,57 @@ package model;
  *
  */
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.io.IOException;
-import java.util.Scanner;
 
-public class Character extends dndObj
+public class Character implements dndInterface
 {
 	//////// FIELDS ////////
-	// index for finding character
-	// character's level (1-20)
-	// character's name
-	// notes on character
+	private int index; // character's index
+	private static int nextIndex = 0;
+	private int level; // characters level
+	private String name; // characters name
+	private String notes; // notes on character
 	private String classes; // the character's classes (wizard, sorcerer, etc.)
 	private int attackBonus; // the character's attackBonus
 	private int spellSaveDC; // the character's spellSaveDC
 	
 
 	//////// CONSTRUCTORES ////////
-
-	/**
-	 * reading a character from the database and adding them as an object
-	 * @throws FileNotFoundException
-	 */
-	public Character(File input) throws FileNotFoundException 
-	{
-		Scanner characterFile = new Scanner(input);
-		index = characterFile.nextInt();
-		name = characterFile.nextLine();
-		classes = characterFile.nextLine();
-		characterFile.nextLine();
-		level = characterFile.nextInt();
-		attackBonus = characterFile.nextInt();
-		spellSaveDC = characterFile.nextInt();
-		
-	}
-
-	/**
-	 * creating a new character object and adding them to the database
-	 */
-	public Character(Scanner input)
-	{
-		Scanner keyboard = input;
-		// receive characterName
-		setName(keyboard.nextLine());
-		//
-		setLevel(keyboard.nextInt());
-		// receive characterClass 
-		classes = keyboard.nextLine();
-		// receive attackBonus 
-		attackBonus = keyboard.nextInt();
-		// receive spellSaveDC
-		spellSaveDC = keyboard.nextInt();
-
-	}
 	
-	//////// INDEX JUNK ////////
-	
+	/**
+	 * creating a character object
+	 * @param readIndex
+	 * @param readName
+	 * @param readLevel
+	 * @param readClasses
+	 * @param readAttackBonus
+	 * @param readSpellSaveDC
+	 * @param readNotes
+	 */
+	public Character(int readIndex, String readName, int readLevel, 
+						String readClasses, int readAttackBonus, 
+						int readSpellSaveDC, String readNotes) 
+	{
+		this.index = readIndex;
+		this.name = readName;
+		this.level = readLevel;
+		this.classes = readClasses;
+		this.attackBonus = readAttackBonus;
+		this.spellSaveDC = readSpellSaveDC;
+		this.notes = readNotes;
+	}
 
 	//////// THE BASIC GETTERS AND SETTERS ////////
+	
+	/**
+	 * increments the next index counter
+	 */
+	public int getNextIndex() {
+		return nextIndex++;
+	}
 
 	/**
 	 * set classes
-	 * @param
+	 * @param 
 	 */
 	public void setClasses(String newClass) {
 		classes = newClass;
@@ -93,8 +79,6 @@ public class Character extends dndObj
 		spellSaveDC = newSaveDC;
 	}
 	
-
-	
 	/**
 	 * getCharacterClass
 	 * @return characterClass
@@ -102,7 +86,6 @@ public class Character extends dndObj
 	public String getClasses() {
 		return classes;
 	}
-	
 	
 	/**
 	 * getAttackBonus
@@ -120,5 +103,15 @@ public class Character extends dndObj
 		return spellSaveDC;
 	}
 
+	/**
+	 * 
+	 * @param level
+	 * @throws Exception
+	 */
+	public void checkLevelInRange(int level) throws Exception {
+		if (level > 0 && level <= 20) {
+			throw new Exception(level + " is out of range");
+		}
+	}
 
 }

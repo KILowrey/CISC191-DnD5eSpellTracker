@@ -6,13 +6,13 @@ package model;
  * @author KILowrey
  *
  */
-public class SpellSlot
+public class SpellSlot implements dndInterface
 {
 	//////// FIELDS ////////
-	// if the slot is used
-	private boolean used = false;
-	// what spell the slot was used for (optional)
-	private Spell usedFor;
+	private int level; // what level spell slot it is
+	private int notes; // user notes for the spell slot such as "pact magic"
+	private boolean used = false; // if the slot is used
+//	private Spell usedFor; // what spell the slot was used for (optional)
 	
 	
 }
