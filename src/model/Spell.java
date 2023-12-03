@@ -13,7 +13,7 @@ public class Spell implements dndInterface
 	private int index; // spell index
 	private static int nextIndex = 0; // next index
 	private int level; // spell level (0-9)
-	private String notes; // notes for the spell
+//	private String notes; // notes for the spell
 	private Enum school; // what school of magic it is
 	private String castTime; // how long it takes to cast
 	private String range; // the spell's range
@@ -32,15 +32,16 @@ public class Spell implements dndInterface
 
 	//////// CONSTRUCTORS ////////
 	
-	public Spell(String inputName, int inputLevel, String inputNotes,
+	public Spell(String inputName, int inputLevel, Enum inputSource,
 				Enum inputSchool, String inputCastTime, String inputRange,
 				boolean inputIsV, boolean inputIsS, boolean inputIsM, String inputMaterials,
 				String inputDuration, boolean inputIsRitual, boolean inputIsConcentration,
-				Enum inputAttackType, Enum inputSaveType, String inputSpellText, String inputHigherLevels, Enum inputSource)
+				Enum inputAttackType, Enum inputSaveType, String inputSpellText, String inputHigherLevels)
 	{
 		this.name = inputName;
 		this.level = inputLevel;
-		this.notes = inputNotes;
+		this.source = inputSource;
+//		this.notes = inputNotes;
 		this.school = inputSchool;
 		this.castTime = inputCastTime;
 		this.range = inputRange;
@@ -55,7 +56,6 @@ public class Spell implements dndInterface
 		this.saveType = inputSaveType;
 		this.spellText = inputSpellText;
 		this.higherLevels = inputHigherLevels;
-		this.source = inputSource;
 		//this.index = getNextIndex();
 	}
 	

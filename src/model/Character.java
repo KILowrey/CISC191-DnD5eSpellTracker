@@ -1,12 +1,16 @@
 package model;
 
-
 /**
+ * Class Character is for the character object this project is built around.
+ * 
+ * The Character object has fields for the info a user would need for their character when playing
+ * such as the characters level and (spell) attack Bonus.
+ * 
+ * Character will have SpellSlot Objects.
+ * The CharacterSpells in this project will be tied to a character.
  * 
  * @author KILowrey
- *
  */
-
 
 public class Character implements dndInterface
 {
@@ -19,7 +23,8 @@ public class Character implements dndInterface
 	private String classes; // the character's classes (wizard, sorcerer, etc.)
 	private int attackBonus; // the character's attackBonus
 	private int spellSaveDC; // the character's spellSaveDC
-	
+	// data struc of SpellSlots
+	// CharacterSpells
 
 	//////// CONSTRUCTORES ////////
 	

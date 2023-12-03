@@ -10,13 +10,10 @@ public class CharacterSpell extends Spell
 {
 
 	//////// FIELDS ////////
-	// inherates everything from Spell
-	// if character has spell prepared
-	private boolean isPrepared;
-	// if it is always prepared
-	private boolean alwaysPrepared;
-	// if the user has favorited it for that character
-	private boolean isFavorite;
+	// Inherits everything from Spell
+	private boolean isPrepared; // if character has spell prepared
+	private boolean alwaysPrepared; // if it is always prepared
+	private boolean isFavorite; // if the user has favorited it for that character
 
 	//////// SETTERS AND GETTERS ////////
 
@@ -52,6 +49,5 @@ public class CharacterSpell extends Spell
 	 * set characterNotes
 	 */
 
-	//////// CONSTUCTORS ////////
 
 }

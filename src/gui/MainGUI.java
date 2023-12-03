@@ -1,10 +1,14 @@
+package gui;
+
 /**
  * 
+ * @author KILowrey
  */
-package gui;
+
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class MainGUI extends JFrame
+public class MainGUI extends JFrame implements ActionListener
 {
 
 	//////// FIELDS ////////
@@ -34,5 +38,10 @@ public class MainGUI extends JFrame
 		// display the window
 		setVisible(true);
 	}
+	
+	/**
+	 * TODO for V2: replace JFrame.EXIT_ON_CLOSE with a function that saves/updates the database and then invokes JFrame.EXIT_ON_CLOSE
+	 */
+	// public void saveAndClose() {}
 
 }

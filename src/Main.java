@@ -6,7 +6,7 @@
 
 import model.*;
 import gui.*;
-import testing.*;
+import testing.TempDatabase;
 
 public class Main
 {
@@ -19,8 +19,8 @@ public class Main
 		/**
 		 * load up from our files database
 		 */
-		loadSpellsFromDatabase();
-		loadCharactersFromDatabase();
+		createCharacters();
+		populateSpellList();
 		
 		/**
 		 * load up GUI stuff

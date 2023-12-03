@@ -1,7 +1,8 @@
 package model;
 
-
 /**
+ * 
+ * NOTE: SpellSlot will be done last as I just relized that I don't actually need it to make the grade.
  * 
  * @author KILowrey
  *
